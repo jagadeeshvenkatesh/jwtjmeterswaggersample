@@ -1,0 +1,1 @@
+jmeter -n -t ../authapitestplan.jmx  -Joauth_path=TENANTNAME.onmicrosoft.com/oauth2/token -Jclient_id=CLIENT_ID -Jclient_secret=CLIENT_SECRET -Jresource_uri=RESOURCE_URI -j ./jmeter-log.log -l ./jmeter-results.jtl

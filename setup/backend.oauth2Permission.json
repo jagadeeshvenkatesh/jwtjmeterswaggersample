@@ -1,0 +1,10 @@
+{
+    "adminConsentDescription": "This scope allows client to call the JMeter backend test API.",
+    "adminConsentDisplayName": "Call JMeter Test Backend API",
+    "id": "UUID",
+    "isEnabled": true,
+    "type": "Admin",
+    "userConsentDescription": "This scope allows client to call the JMeter backend test API.",
+    "userConsentDisplayName": "Call JMeter Test Backend API",
+    "value": "call"
+}

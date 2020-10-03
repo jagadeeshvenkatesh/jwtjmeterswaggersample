@@ -26,8 +26,10 @@ namespace JmeterTestBackend.Swagger
                     BearerFormat = "JWT",
                     Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http
                 });
-                //// Add the security requirement details
-                //c.OperationFilter<SwaggerSecurityOperationFilter>();
+                
+                // Add the security requirement details
+                // The code below enables adding Swagger Security enablement per API operation
+                // c.OperationFilter<SwaggerSecurityOperationFilter>();
                 // The code below adds security globally regardless of whether operations need it or not
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement()
                 {
@@ -44,6 +46,8 @@ namespace JmeterTestBackend.Swagger
                     }
                 });
             });
+
+            services.AddSwaggerGenNewtonsoftSupport();
         }
 
         public static void ConfigureSwaggerGen(IApplicationBuilder app, IWebHostEnvironment env)

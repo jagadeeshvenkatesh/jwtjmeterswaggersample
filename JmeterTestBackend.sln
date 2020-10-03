@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JmeterTestBackend", "JmeterTestBackend\JmeterTestBackend.csproj", "{EA490E67-43E6-4E81-A9DC-C927A1D671BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JmeterTestIdServer", "JmeterTestIdServer\JmeterTestIdServer.csproj", "{E3CF9D60-3EA6-47B2-A310-01D7531E0D9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JmeterTestIdServer", "JmeterTestIdServer\JmeterTestIdServer.csproj", "{E3CF9D60-3EA6-47B2-A310-01D7531E0D9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C320F44-8DFA-4141-A408-87F8C0B9B364}"
+	ProjectSection(SolutionItems) = preProject
+		authapitestplan.jmx = authapitestplan.jmx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

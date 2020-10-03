@@ -27,25 +27,22 @@ namespace JmeterTestBackend.Swagger
                     Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http
                 });
                 //// Add the security requirement details
-                c.OperationFilter<SwaggerSecurityOperationFilter>();
+                //c.OperationFilter<SwaggerSecurityOperationFilter>();
                 // The code below adds security globally regardless of whether operations need it or not
-                //c.AddSecurityRequirement(new OpenApiSecurityRequirement()
-                //{
-                //    {
-                //        new OpenApiSecurityScheme
-                //        {
-                //            Reference = new OpenApiReference
-                //            {
-                //                Type = ReferenceType.SecurityScheme,
-                //                Id = "Bearer"
-                //            },
-                //            Scheme = "Bearer",
-                //            Name = "Bearer",
-                //            In = ParameterLocation.Header
-                //        },
-                //        new List<string>() { }
-                //    }
-                //});
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new List<string>() { }
+                    }
+                });
             });
         }
 
